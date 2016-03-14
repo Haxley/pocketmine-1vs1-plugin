@@ -130,9 +130,13 @@ class Arena{
 		$player->getInventory()->clearAll();
 		
 		// Give sword, food and armor
-		$player->getInventory()->addItem(Item::get(ITEM::DIAMOND_SWORD));
-		$player->getInventory()->addItem(Item::get(ITEM::GOLDEN_APPLE));
-		$player->getInventory()->setItemInHand(Item::get(ITEM::DIAMOND_SWORD), $player);
+		$player->getInventory()->addItem(Item::get(272, 0 , 1));
+		$player->getInventory()->addItem(Item::get(261, 0, 1));
+		$player->getInventory()->addItem(Item::get(262, 0, 64));
+		$player->getInventory()->addItem(Item::get(364, 0, 10));
+		$player->getInventory()->addItem(Item::get(322, 1, 1));
+		$player->getInventory()->addItem(Item::get(438, 24, 16));
+		$player->getInventory()->setItemInHand(Item::get(272,0,1), $player);
 		
 		// Pur the armor on the player
 		$player->getInventory()->setHelmet(Item::get(310, 0, 1));
