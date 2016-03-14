@@ -37,8 +37,8 @@ class Arena{
 	// Roound duration (3min)
 	const ROUND_DURATION = 180;
 	
-	const PLAYER_1_OFFSET_X = 5;
-	const PLAYER_2_OFFSET_X = -5;
+	const PLAYER_1_OFFSET_X = 10;
+	const PLAYER_2_OFFSET_X = -10;
 	
 	// Variable for stop the round's timer
 	private $taskHandler;
@@ -130,15 +130,15 @@ class Arena{
 		$player->getInventory()->clearAll();
 		
 		// Give sword, food and armor
-		$player->getInventory()->addItem(Item::get(ITEM::IRON_SWORD));
-		$player->getInventory()->addItem(Item::get(ITEM::BREAD));
-		$player->getInventory()->setItemInHand(Item::get(ITEM::IRON_SWORD), $player);
+		$player->getInventory()->addItem(Item::get(ITEM::DIAMOND_SWORD));
+		$player->getInventory()->addItem(Item::get(ITEM::GOLDEN_APPLE));
+		$player->getInventory()->setItemInHand(Item::get(ITEM::DIAMOND_SWORD), $player);
 		
 		// Pur the armor on the player
-		$player->getInventory()->setHelmet(Item::get(302, 0, 1));
-		$player->getInventory()->setChestplate(Item::get(303, 0, 1));
-		$player->getInventory()->setLeggings(Item::get(304, 0, 1));
-		$player->getInventory()->setBoots(Item::get(305, 0, 1));
+		$player->getInventory()->setHelmet(Item::get(310, 0, 1));
+		$player->getInventory()->setChestplate(Item::get(311, 0, 1));
+		$player->getInventory()->setLeggings(Item::get(312, 0, 1));
+		$player->getInventory()->setBoots(Item::get(313, 0, 1));
 		$player->getInventory()->sendArmorContents($player);
 		
 		// Set his life to 20
