@@ -34,8 +34,8 @@ class Arena{
 	/** @var ArenaManager */
 	private $manager;
 	
-	// Roound duration (3min)
-	const ROUND_DURATION = 180;
+	// Roound duration (5min)
+	const ROUND_DURATION = 300;
 	
 	const PLAYER_1_OFFSET_X = 10;
 	const PLAYER_2_OFFSET_X = -10;
@@ -134,8 +134,8 @@ class Arena{
 		$player->getInventory()->addItem(Item::get(261, 0, 1));
 		$player->getInventory()->addItem(Item::get(262, 0, 64));
 		$player->getInventory()->addItem(Item::get(364, 0, 10));
-		$player->getInventory()->addItem(Item::get(322, 1, 1));
-		$player->getInventory()->addItem(Item::get(438, 22, 16));
+		$player->getInventory()->addItem(Item::get(322, 0, 3));
+		$player->getInventory()->addItem(Item::get(438, 22, 8));
 		$player->getInventory()->setItemInHand(Item::get(276,0,1), $player);
 		
 		// Pur the armor on the player
