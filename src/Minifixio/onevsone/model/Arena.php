@@ -136,7 +136,6 @@ class Arena{
 		$player->getInventory()->addItem(Item::get(364, 0, 10));
 		$player->getInventory()->addItem(Item::get(322, 0, 3));
 		$player->getInventory()->addItem(Item::get(438, 22, 8));
-		$player->getInventory()->setItemInHand(Item::get(276,0,1), $player);
 		
 		// Pur the armor on the player
 		$player->getInventory()->setHelmet(Item::get(310, 0, 1));
